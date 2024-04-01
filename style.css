@@ -20,7 +20,7 @@ body{
         background-position: center center;
         background-attachment: fixed; }
 
-    p{font-size:21px;}
+    p{font-size:large}
 
 }
 
@@ -59,7 +59,7 @@ body{
     align-items: center;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media (hover: none) and (pointer: coarse){
     .nav-bar{
         max-height: 200px;
     }
@@ -135,7 +135,7 @@ h2{
     margin-top: 40PX;
 }
 
-@media (max-width: 576px){
+@media (hover: none) and (pointer: coarse) or (max-width: 576px){
     .description{
         column-count: 1;
     }
@@ -166,7 +166,7 @@ h2{
     text-decoration: none;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media (hover: none) and (pointer: coarse){
     .button{
         width: 400px;
         height: 160;
@@ -211,7 +211,7 @@ h2{
     background-color: white;
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
+@media (hover: none) and (pointer: coarse){
     .footer{
         max-height: 200px;
     }
