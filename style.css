@@ -238,6 +238,13 @@ h2{
     background-color: white;
 }
 
+.my-slider-container{
+    margin-inline: auto;
+    margin-top: 50px;
+    max-width: 800px;
+    aspect-ratio: 800/450;
+}
+
 /* @media (hover: none) and (pointer: coarse){
     .footer{
         max-height: 200px;
