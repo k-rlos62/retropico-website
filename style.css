@@ -74,6 +74,7 @@ body{
 }
 
 .gradient-container{
+    padding-inline: 30px;
     /* padding-top:20vh; */
     padding-bottom: 50px;
     /* height: 200vh; */
@@ -117,6 +118,11 @@ body{
     box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
 }
 
+/* .passees{
+    color:#F5AC9D;
+    font-weight: 300;
+} */
+
 hr.thick{
     border-top: 3px dashed #E84919;
 }
@@ -135,7 +141,7 @@ h2{
 .description-youtube{
     margin-left: auto;
     margin-right: auto;
-    margin-top:140px;
+    margin-top:50px;
     max-width:800px;
 }
 
@@ -150,7 +156,7 @@ h2{
 }
 
 .description{
-    column-count: 2;
+    /* column-count: 2; */
     color:#F5AC9D;
     margin-top: 40PX;
 }
