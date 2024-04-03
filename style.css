@@ -152,6 +152,7 @@ h2{
 }
 
 #video-iframe{
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
     border-radius: 7px;
 }
 
