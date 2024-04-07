@@ -6,10 +6,18 @@ html{
 
 body{
     background-color: rgba(174,48,71,1);
-    background-image: url("images/background.png");
+    background-image: url("images/background-A4.png");
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url("images/background.png");
+        background-size: 100%;
+    }
 }
 
 .nav-bar{
@@ -19,10 +27,14 @@ body{
     max-height: 100px;
     min-height: 20px;
 }
-
+.logo-container{
+    display:flex;
+    justify-content: center;
+}
 .navbar-logo{
     max-height:100%;
-    width:auto
+    max-width: 100%;
+    width: auto;
 }
 
 .social-icons{
@@ -43,11 +55,17 @@ body{
 }
 
 .empty-container{
-    /* min-height: 100vh; */
-    height: min(66vw,100vh);
+    height: min(110vw,100vh);
+}
+
+@media only screen and (min-width: 768px) {
+    .empty-container{
+        height: min(66vw,100vh);
+    }
 }
 
 .gradient-container{
+    width: 100%;
     padding-inline: 30px;
     /* padding-top:20vh; */
     padding-bottom: 70px;
@@ -214,10 +232,24 @@ h2{
 }
 
 .my-slider-container{
-    margin-inline: auto;
+    /* margin-inline: auto; */
     /* margin-top: 50px; */
     width: 100%;
-    aspect-ratio: 16/9;
+    max-height:100vh ;
+    /* aspect-ratio: 16/9; */
+}
+
+/* .slider-container{
+    max-height: 100vh;
+} */
+
+
+
+li img{
+    max-width: 100vW;
+    /* max-height: 100vh; */
+    /* overflow: important hidden; */
+    /* object-fit: fill; */
 }
 
 /* @media (hover: none) and (pointer: coarse){

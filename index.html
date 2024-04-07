@@ -2,46 +2,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-        <link rel="stylesheet" href="style.css">
+        
         <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
         <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- <script src="https://open.spotify.com/embed/iframe-api/v1" async></script> -->
+        <link rel="stylesheet" href="style.css">
 
     </head>
     <body>
         <div class="container-fluid empty-container">
             <div class="row nav-bar">
-                <img src="images/title.png" class="col-xl-auto navbar-logo"></img>
+                <div class="col-md-auto logo-container ">
+                    <img src="images/header/retropico-logo.svg" class="col-xl-auto navbar-logo"></img></div>
+                
                 <div class="col"></div>
-                <div class="col-xl-auto ">
+                <div class="col-md-auto ">
                     <div class="row social-icons">
                         <a class="navbar-item col" href="mailto:retropico.club@gmail.com">
-                            <img class="navbar-image" src="images/mail.png" alt="">
+                            <img class="navbar-image" src="images/header/mail.png" alt="">
                         </a>
                         <a class="navbar-item col" href="https://www.facebook.com/retropico/">
-                            <img class="navbar-image" src="images/facebook.svg" alt="">
+                            <img class="navbar-image" src="images/header/facebook.svg" alt="">
                         </a>
 
                         <a class="navbar-item col" href="https://www.instagram.com/retropico.club/">
-                            <img class="navbar-image" src="images/instagram.svg" alt="">
+                            <img class="navbar-image" src="images/header/instagram.svg" alt="">
                         </a>
 
                         <a class="navbar-item col" href="https://open.spotify.com/intl-fr/artist/3GyRy9RpnwQiUVFEVybRTQ">
-                            <img class="navbar-image" src="images/spotify.svg" alt="">
+                            <img class="navbar-image" src="images/header/spotify.svg" alt="">
                         </a>
 
                         <a class="navbar-item col" href="https://www.youtube.com/@retropicoclub">
-                            <img class="navbar-image" src="images/youtube.svg" alt="">
+                            <img class="navbar-image" src="images/header/youtube.svg" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid gradient-container">
+        <div class=" gradient-container">
             <div class="date-spotify">
                 <div class="row dates-spotify">
-                    <div class="col-xl-auto dates-spotify-col">
+                    <div class="col-md-auto dates-spotify-col">
                         <div class="component dates-container">
                             <h2>CONCERTS</h2>
                             <p>27 Avril 2024 - Festival Brasserie iLLeGaaL (Bruxelles)</p>
@@ -57,7 +59,7 @@
                             </div>     
                         </div>
                     </div>
-                    <div class="col-xl dates-spotify-col">
+                    <div class="col-md dates-spotify-col">
                         <div class="spotify-container">
                             <iframe 
                                 style="border-radius:12px"
@@ -84,7 +86,7 @@
                 <!-- <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen> -->
                 <div class="description">
                     <div class="row">
-                        <div class="col-xl">
+                        <div class="col-md">
                             <p>Depuis 2022, le collectif Retrópico mélange la chaleur des cuivres aux synthés et rythmiques house, 
                                 embarquant les oreilles dans un univers musical aussi inattendu qu’irrésistiblement entrainant, avec
                                 pour mission de porter le groove toujours plus loin.
@@ -92,7 +94,7 @@
                                 <p>Deux synthétiseurs et un batteur s'entourent de deux trompettes, un trombone et un saxophone baryton. </p>
                             
                         </div>
-                        <div class="col-xl">
+                        <div class="col-md">
                             <p>
                                 Basé à Paris, le groupe interprète des compositions originales jonglant entre les styles, allant de la
                                  techno au jazz en passant par la synth-wave.</p>
@@ -110,12 +112,12 @@
             
         </div>
         <div class="my-slider-container">
-            <div class="swiffy-slider">
+            <div class="swiffy-slider slider-nav-visible">
                 <ul class="slider-container">
-                    <li><img src="images/slideshow/Band4-Krakow Magdalena Laszczak.jpeg" style="max-width: 100%;height: auto;"></li>
-                    <li><img src="images/slideshow/Emma David - Studio de l'Ermitage - 10 2023 - ensemble.jpeg" style="max-width: 100%;height: auto;"></li>
-                    <li><img src="images/slideshow/Quetzal1-BA Malu Campello.jpeg" style="max-width: 100%;height: auto;"></li>
-                    <li><img src="images/slideshow/Quetzal2-BA Malu Campello.jpeg" style="max-width: 100%;height: auto;"></li>
+                    <li><img src="images/slideshow/Band4-Krakow Magdalena Laszczak.jpeg" ></li>
+                    <li><img src="images/slideshow/Emma David - Studio de l'Ermitage - 10 2023 - ensemble.jpeg"></li>
+                    <li><img src="images/slideshow/Quetzal1-BA Malu Campello.jpeg"></li>
+                    <li><img src="images/slideshow/Quetzal2-BA Malu Campello.jpeg"></li>
                 </ul>
             
                 <button type="button" class="slider-nav"></button>
@@ -131,10 +133,10 @@
         </div>
         <div class="footer footer-icons">
             <div class="footer-logo ministere">
-                <img src="images/1200px-ministere_de_la_culture.svg_2020.png" alt="">
+                <img src="images/footer/1200px-ministere_de_la_culture.svg_2020.png" alt="">
             </div> 
             <div class="footer-logo peopeo">
-                <img src="images/peopeo.png" alt="">
+                <img src="images/footer/peopeo.png" alt="">
             </div>
         </div>
 
