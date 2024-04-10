@@ -1,31 +1,107 @@
 
 html{
-    background-color: rgba(174,48,71,1);
+    background-color: #E84919;
     font-family: "Work Sans","sans-serif";
 }
 
 body{
-    background-color: rgba(174,48,71,1);
-    background-image: url("images/background-A4.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
     margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url("images/background-A4.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
     body{
-        background-image: url("images/background.png");
-        background-size: 100%;
+        background-image: none;
     }
+
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y:auto;
+        perspective: 50px;
+        z-index: -8;
+        
+    }
+    
+    .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vW;
+    }
+
+    .parallax-layer img{
+        width: 100%;
+    }
+    
+    
+    .layer4{
+        transform: translateZ(-300px) scale(7);
+        z-index: -5;
+    }
+
+    .layer4 img{
+        content: url("images/retropico-illu-nuit-calques/Plan4.png");
+    }
+
+    .layer3{
+        transform: translateZ(-250px) scale(6);
+        top:100vw;
+        z-index: -4;
+    }
+
+    .layer3 img{
+        content: url("images/retropico-illu-nuit-calques/Plan3.png")
+    }
+
+    .layer2{
+        transform: translateZ(-200px) scale(5);
+        top:110vw;
+        z-index: -3;
+    }
+    .layer2 img{
+        content: url("images/retropico-illu-nuit-calques/Plan2.png");
+    }
+
+    .layer1-bis{
+        transform: translateZ(-100px) scale(3);
+        top:55vw;
+        z-index: -2;
+    }
+    .layer1-bis img{
+        content: url("images/retropico-illu-nuit-calques/Plan1-bis.png");
+    }
+
+    .layer1{
+        transform: translateZ(-50px) scale(2);
+        top:75vw;
+        z-index: -1;
+    }
+    .layer1 img{
+        content: url("images/retropico-illu-nuit-calques/Plan1.png");
+    }
+
 }
 
+
 .nav-bar{
+    position: sticky;
     display: flex;
     flex-direction: row;
     height: 20vh;
     max-height: 100px;
     min-height: 20px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1),rgba(0,0,0,0));
 }
 .logo-container{
     display:flex;
@@ -47,7 +123,7 @@ body{
 }
 
 .navbar-item{
-    flex:auto;
+    /* flex:auto; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -60,7 +136,8 @@ body{
 
 @media only screen and (min-width: 768px) {
     .empty-container{
-        height: min(66vw,100vh);
+        /* height: min(66vw,100vh); */
+        height: 100vw;
     }
 }
 
@@ -72,6 +149,12 @@ body{
     /* height: 200vh; */
     background: rgb(72,53,62);
     background: linear-gradient(180deg, rgba(72,53,62,0) 0%, rgba(91,52,64,1) 22vW, rgba(174,48,71,1) 100%);
+}
+
+@media only screen and (min-width: 768px) {
+    .gradient-container{
+        background: linear-gradient(180deg, rgba(72,53,62,0) 0%, rgba(91,52,64,1) 30vW, rgba(174,48,71,1) 100%);
+    }
 }
 
 .spotify-container{
@@ -211,16 +294,6 @@ h2{
     background-color: #ebcdc8
 }
 
-.slideshow{
-    padding: 0;
-}
-
-.carousel-image{
-    max-width: 100vW;
-    max-height: 100vh;
-    height: auto;
-    width: auto;
-}
 
 .footer{
     /* border-top-color: black;
@@ -235,28 +308,25 @@ h2{
     /* margin-inline: auto; */
     /* margin-top: 50px; */
     width: 100%;
-    max-height:100vh ;
-    /* aspect-ratio: 16/9; */
+    /* max-height:100vh ; */
+    aspect-ratio: 16/9;
 }
 
 /* .slider-container{
     max-height: 100vh;
 } */
 
-
+/* li{
+    height: fit-content;
+}*/
 
 li img{
-    max-width: 100vW;
-    /* max-height: 100vh; */
+    width: 100%; 
+    /* height: 100vh; */
     /* overflow: important hidden; */
     /* object-fit: fill; */
 }
 
-/* @media (hover: none) and (pointer: coarse){
-    .footer{
-        max-height: 200px;
-    }
-} */
 
 .footer-logo{
     flex:auto;
