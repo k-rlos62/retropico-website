@@ -43,10 +43,13 @@ body{
 
     .parallax-layer img{
         width: 100%;
+        height: min-content;
+        width: 100%;
     }
     
     
     .layer4{
+        -webkit-transform: translateZ(-300vw) scale(7);
         transform: translateZ(-300vw) scale(7);
         z-index: -5;
     }
@@ -56,6 +59,7 @@ body{
     }
 
     .layer3{
+        -webkit-transform: translateZ(-250vw) scale(6);
         transform: translateZ(-250vw) scale(6);
         top:100vw;
         z-index: -4;
@@ -66,6 +70,7 @@ body{
     }
 
     .layer2{
+        -webkit-transform: translateZ(-200vw) scale(5);
         transform: translateZ(-200vw) scale(5);
         top:110vw;
         z-index: -3;
@@ -75,6 +80,7 @@ body{
     }
 
     .layer1-bis{
+        -webkit-transform: translateZ(-100vw) scale(3);
         transform: translateZ(-100vw) scale(3);
         top:55vw;
         z-index: -2;
@@ -84,6 +90,7 @@ body{
     }
 
     .layer1{
+        -webkit-transform: translateZ(-50vw) scale(2);
         transform: translateZ(-50vw) scale(2);
         top:75vw;
         z-index: -1;
@@ -314,16 +321,20 @@ h2{
 }
 
 .my-slider-container{
+    border-radius: 7px;
+    /* box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1); */
+    margin-left: auto;
+    margin-right: auto;
+    margin-block:100px;
+    max-width:800px;
     background-color:  rgba(174,48,71,1);
-    /* margin-inline: auto; */
-    /* margin-top: 50px; */
-    width: 100%;
-    /* max-height:100vh ; */
     aspect-ratio: 16/9;
-    margin-bottom: 300px;
+    margin-bottom:50px;
 }
 
 .slider-container{
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
+    border-radius: 7px;
     width: 100% !important;
     aspect-ratio: 16/9 !important;
     height: auto;
