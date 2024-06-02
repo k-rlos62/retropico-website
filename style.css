@@ -1,6 +1,6 @@
 
 html{
-    background-color: #E84919;
+    background-color:  rgba(174,48,71,1);
     font-family: "Work Sans","sans-serif";
 }
 
@@ -174,7 +174,7 @@ body{
 
 .spotify-container{
     /* margin-top:20px; */
-    min-height: 400px;
+    height: 400px;
     border-radius: 15px;
     box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
 }
@@ -184,7 +184,20 @@ body{
     margin-left: auto;
     margin-right: auto;
     /* margin-top:140px; */
-    max-width:800px;
+    max-width:1000px;
+}
+
+.bit-details-inner-wrapper{
+    width: 300px !important;
+}
+
+.bit-button{
+    background-color: #e75529 !important;
+    height: 32px !important;
+    width: 160px !important;
+    border-radius: 4px !important;
+    color: white !important;
+    border-color: #48353e !important;
 }
 
 .dates-spotify-col{
@@ -192,6 +205,7 @@ body{
 }
 
 .dates-container{
+    overflow: auto;
     /* margin-top:20px; */
     /* margin-block: 20px; */
     border-radius: 15px;
@@ -199,6 +213,7 @@ body{
     color:#E84919;
     padding: 30px;
     font-weight: 400;
+    height: 400px;
     box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
 }
 
@@ -223,7 +238,7 @@ h2{
 .container-part-2{
     margin-left: auto;
     margin-right: auto;
-    max-width:800px;
+    max-width:1000px;
 }
 
 .container-video{
@@ -301,7 +316,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     margin-block:100px;
-    max-width:800px;
+    max-width:1000px;
     background-color:  rgba(174,48,71,1);
     aspect-ratio: 16/9;
     margin-bottom:50px;
