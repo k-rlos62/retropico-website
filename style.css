@@ -168,12 +168,11 @@ body{
 
 @media only screen and (min-width: 768px) {
     .gradient-container{
-        background: linear-gradient(180deg, rgba(72,53,62,0) 0%, rgba(91,52,64,1) 30vW, rgba(174,48,71,1) 100%);
+        background: linear-gradient(180deg, rgba(72,53,62,0) 0%, rgba(91,52,64,1) 50vW, rgba(174,48,71,1) 100%);
     }
 }
 
 .spotify-container{
-    /* margin-top:20px; */
     height: 400px;
     border-radius: 15px;
     box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
@@ -204,10 +203,14 @@ body{
     margin-block:50px
 }
 
+@font-face  {
+    font-family: "retropico";
+    src: url("Retropico_v1-Regular.ttf")
+  }
+
 .dates-container{
+    font-family: "retropico","Work Sans";
     overflow: auto;
-    /* margin-top:20px; */
-    /* margin-block: 20px; */
     border-radius: 15px;
     background-color:#48353E ;
     color:#E84919;
@@ -218,42 +221,36 @@ body{
 }
 
 
-
-hr.thick{
-    border-top: 3px dashed #E84919;
-}
-
-/** Safari */
-/* @media not all and (min-resolution: 0.001dpcm) {
-    .spotify-container{
-        max-height: inherit;
-    }
-    } */
-
-
 h2{
-    font-weight:800;
+    font-weight:400;
+    font-size: 3rem;
+
 }
 
 .container-part-2{
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    max-width:1000px;
 }
 
 .container-video{
     width:100%;
+    margin-top:20px;
+    margin-bottom: 100px;
     aspect-ratio: 16/9;
 }
 
-#video-iframe{
-    box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
+.container-video video{
+    width:100%;
+    height: auto;
     border-radius: 7px;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.1),0 0 29px 0 rgba(0,0,0,.1);
 }
+
 
 .description{
     color:#F5AC9D;
-    margin-top: 40PX;
+    margin-bottom: 50px;
 }
 
 .text-description{
