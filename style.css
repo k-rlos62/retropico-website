@@ -53,11 +53,13 @@ body{
         -webkit-transform: translateZ(-300vw) scale(7);
         transform: translateZ(-300vw) scale(7);
         z-index: -5;
-        top:0;
+        top:-50vw;
     }
 
     .layer4 img{
+        
         content: url("images/retropico-illu-nuit-calques/Plan4.png");
+        
     }
 
     .layer3{
