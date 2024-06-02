@@ -65,7 +65,7 @@ body{
     .layer3{
         -webkit-transform: translateZ(-250vw) scale(6);
         transform: translateZ(-250vw) scale(6);
-        top:170vw;
+        top:150vw;
         z-index: -4;
     }
 
@@ -76,7 +76,7 @@ body{
     .layer2{
         -webkit-transform: translateZ(-200vw) scale(5);
         transform: translateZ(-200vw) scale(5);
-        top:200vw;
+        top:180vw;
         z-index: -3;
     }
     .layer2 img{
@@ -86,7 +86,7 @@ body{
     .layer1-bis{
         -webkit-transform: translateZ(-100vw) scale(3);
         transform: translateZ(-100vw) scale(3);
-        top:135vw;
+        top:155vw;
         z-index: -2;
     }
     .layer1-bis img{
