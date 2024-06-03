@@ -1,4 +1,6 @@
-
+:root{
+    --largeur-contenu: 1000px;
+}
 html{
     background-color:  rgba(174,48,71,1);
     font-family: "Work Sans","sans-serif";
@@ -114,6 +116,7 @@ body{
     max-height: 100px;
     min-height: 20px;
     background: linear-gradient(180deg, rgba(0,0,0,0.1),rgba(0,0,0,0));
+    padding: 0 30px 0 19px;
 }
 .logo-container{
     display:flex;
@@ -183,7 +186,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     /* margin-top:140px; */
-    max-width:1000px;
+    max-width: var(--largeur-contenu);
 }
 
 .bit-details-inner-wrapper{
@@ -228,9 +231,9 @@ h2{
 }
 
 .container-part-2{
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    max-width: var(--largeur-contenu);
 }
 
 .container-video{
@@ -313,7 +316,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     margin-block:100px;
-    max-width:1000px;
+    max-width: var(--largeur-contenu);
     background-color:  rgba(174,48,71,1);
     aspect-ratio: 16/9;
     margin-bottom:50px;
